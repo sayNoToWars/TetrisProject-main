@@ -50,6 +50,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} */
   .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
   }
   
   .right-column {
@@ -59,18 +60,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} */
   }
   
   .game-board {
-	border: solid 2px white;
-	border-radius: 30px;
+	border-right: solid 2px black;
+	border-left: solid 2px black;
+	border-radius: 10px;
 	justify-self: center;
   }
   
   .play-button {
 	max-width: 250px;
-	background-color: #4caf50;
+	background-color: darkgrey;
 	font-size: 16px;
 	padding: 15px 30px;
 	cursor: pointer;
 	border-radius: 20px;
   }
 
-  
