@@ -11,13 +11,6 @@ function handleTouchStart(evt) {
     yDown = evt.touches[0].clientY;                                      
 };
 
-function rightSwipe(evt) {
-    if ( ! xDown || ! yDown ) {
-        return;
-    }
-
-}
-
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
         return;
@@ -28,21 +21,33 @@ function handleTouchMove(evt) {
 
     var xDiff = xDown - xUp;
     var yDiff = yDown - yUp;
+
+    
+    let p = board.piece
     // немного поясню здесь. Тут берутся модули движения по оси абсцисс и ординат (почему модули? потому что если движение сделано влево или вниз, то его показатель будет отрицательным) и сравнивается, чего было больше: движения по абсциссам или ординатам. Нужно это для того, чтобы, если пользователь провел вправо, но немного наискосок вниз, сработал именно коллбэк для движения вправо, а ни как-то иначе.
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
-             console.log('leftswipe')
+            if (board.valid(p)){
+                board.piece.moveLeft()
+            } 
         } else {
-            /* right swipe */
+            if (board.valid(p)){
+                board.piece.moveRight()
+            }/* right swipe */
         }                       
     } else { // Это вам, в общем-то, не надо, вы ведь только влево-вправо собираетесь двигать
         if ( yDiff > 0 ) {
-             /* up swipe */ 
+            board.rotate(p) /* up swipe */ 
         } else { 
-             /* down swipe */
+            board.piece.moveDown() /* down swipe */
         }                                                                 
     }
     /* reset values */
     xDown = null;
     yDown = null;                                             
 };
+
+
+
+
+
