@@ -40,6 +40,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} */
 	font-family: 'Press Start 2P', cursive;
   }
   body {
+	overflow-y: hidden;
 	background-color: darkgrey;
 	
   }
@@ -53,7 +54,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} */
 	grid-template-columns: 1fr 1fr;
 	column-gap: 20px;
 	overscroll-behavior-x: contain;
-    overflow-y: hidden;
   }
   
   .right-column {
