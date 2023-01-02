@@ -65,7 +65,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} */
   .game-board {
 	border-right: solid 2px black;
 	border-left: solid 2px black;
-	border-radius: 10px;
+	border-radius: 5px;
 	justify-self: center;
   }
   
@@ -75,6 +75,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} */
 	font-size: 16px;
 	padding: 15px 30px;
 	cursor: pointer;
+	border: solid 2px black;
 	border-radius: 20px;
+	color: black;
   }
 

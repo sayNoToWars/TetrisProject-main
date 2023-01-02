@@ -35,18 +35,6 @@ class Piece {
       this.y = p.y;
       this.shape = p.shape;
     }
-
-    moveLeft(){
-      this.x = this.x-1
-    }
-
-    moveRight(){
-      this.x = this.x+1
-    }
-
-    moveDown(){
-      this.y = this.y+1
-    }
   
     setStartingPosition() {
       this.x = this.typeId === 4 ? 4 : 3;
