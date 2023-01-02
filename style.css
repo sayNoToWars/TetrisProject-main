@@ -41,6 +41,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} */
   }
   body {
 	background-color: darkgrey;
+	
   }
   .wrapper{
 	max-width: 900px;
@@ -51,6 +52,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} */
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 20px;
+	overscroll-behavior-x: contain;
+    overflow-y: hidden;
   }
   
   .right-column {

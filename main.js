@@ -115,8 +115,8 @@ function animate(now = 0) {
 
 function gameOver() {
   cancelAnimationFrame(requestId);
-  ctx.fillStyle = 'darkgrey';
-  ctx.fillRect(1, 3, 8, 1.2);
+  // ctx.fillStyle = 'darkgrey';
+  // ctx.fillRect(1, 3, 8, 1.2);
   ctx.font = '1px Arial';
   ctx.fillStyle = 'red';
   ctx.fillText('GAME OVER', 1.8, 4);
@@ -131,10 +131,10 @@ function pause() {
   cancelAnimationFrame(requestId);
   requestId = null;
   
-  ctx.fillStyle = 'darkgrey';
-  ctx.fillRect(1, 3, 8, 1.2);
+  // ctx.fillStyle = 'darkgrey';
+  // ctx.fillRect(1, 3, 8, 1.2);
   ctx.font = '1px Arial';
-  ctx.fillStyle = 'red';
+  ctx.fillStyle = 'black';
   ctx.fillText('PAUSED', 3, 4);
 }
 
