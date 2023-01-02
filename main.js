@@ -36,7 +36,6 @@ moves = {
   [KEY.SPACE]: p => ({ ...p, y: p.y + 1 }),
   [KEY.UP]: p => board.rotate(p),
   [KEY.UP1]: p => board.rotate(p),
-  
 };
 
 let board = new Board(ctx, ctxNext);

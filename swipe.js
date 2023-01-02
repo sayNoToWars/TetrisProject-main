@@ -23,23 +23,36 @@ function handleTouchMove(evt) {
     var yDiff = yDown - yUp;
 
     
-    let p = board.piece
+    
     // немного поясню здесь. Тут берутся модули движения по оси абсцисс и ординат (почему модули? потому что если движение сделано влево или вниз, то его показатель будет отрицательным) и сравнивается, чего было больше: движения по абсциссам или ординатам. Нужно это для того, чтобы, если пользователь провел вправо, но немного наискосок вниз, сработал именно коллбэк для движения вправо, а ни как-то иначе.
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+        
         if ( xDiff > 0 ) {
+            let p = moves[KEY.LEFT](board.piece)
             if (board.valid(p)){
-                board.piece.moveLeft()
+                board.piece.move(p)
             } 
         } else {
+            let p = moves[KEY.RIGHT](board.piece)
             if (board.valid(p)){
-                board.piece.moveRight()
+                board.piece.move(p)
             }/* right swipe */
         }                       
     } else { // Это вам, в общем-то, не надо, вы ведь только влево-вправо собираетесь двигать
         if ( yDiff > 0 ) {
-            board.rotate(p) /* up swipe */ 
+            /* up swipe */ 
+            let p = moves[KEY.UP](board.piece)
+            if (board.valid(p)){
+                board.piece.move(p)
+            }
         } else { 
-            board.piece.moveDown() /* down swipe */
+            let p = moves[KEY.DOWN](board.piece)
+            while (board.valid(p)){
+                account.score += POINTS.HARD_DROP;
+                board.piece.move(p);
+                p = moves[KEY.DOWN](board.piece);
+            }
+             /* down swipe */
         }                                                                 
     }
     /* reset values */
