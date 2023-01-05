@@ -10,19 +10,31 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="grid">
-            <canvas id="board" class="game-board"></canvas>
-            <div class="right-column">
-              <div>
-                <h1>TETRIS</h1>
-                <p>Score: <span id="score">0</span></p>
-                <p>Lines: <span id="lines">0</span></p>
-                <p>Level: <span id="level">0</span></p>
-                <canvas id="next" class="next"></canvas>
-              </div>
-              <button onclick="play()" class="play-button">Play</button>
+      <div class="header">
+        <div class="logo">
+          <h1><a class="logoLink" href=https://saynotowars.github.io/TetrisProject-main>TETRIS</a></h1>
+        </div>
+        <div class="menu">
+          <ul class="menuList">
+            <li class="memuListLink"><a href="https://en.wikipedia.org/wiki/Tetris" target="_blank">About game</a></li>
+            <li class="memuListLink"><a href="" target="_blank">Control</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid">
+          <canvas id="board" class="game-board"></canvas>
+          <div class="right-column">
+            <div>
+              <p>Score: <span id="score">0</span></p>
+              <p>Lines: <span id="lines">0</span></p>
+              <p>Level: <span id="level">0</span></p>
+              <canvas id="next" class="next"></canvas>
             </div>
+            <button onclick="play()" class="play-button">Play</button>
           </div>
+        </div>
+        <div class="footer">
+        </div>
     </div>
    
     <script src="./constance.js"></script>
