@@ -41,84 +41,92 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   }
   body {
 	background-color: lightgrey;
-  }
+}
 
-  @media (max-width: 400px) {
-	body {
-		overscroll-behavior-x: contain;
-		overflow-y: hidden;
-	}
-  }
+@media (max-width: 400px) {
+body {
+	overscroll-behavior-x: contain;
+	overflow-y: hidden;
+}
+}
 
-  h1 {
+h1 {
 	font-size: 34px;
-  }
+}
 
-  a {
+a {
 	color: black;
 	transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-  }
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+}
 
-  a:hover {
+a:hover {
 	font-size: 24px;
-  }
+}
 
-  .wrapper{
+.wrapper{
 	max-width: 800px;
+	min-height: 100%;
 	margin: auto;
-  }
+	display: flex;
+	flex-direction: column;
+}
 
-  .header {
+.header {
 	max-height: 200px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	color: black;
 	align-items: center;
-  }
+}
 
-  .logo {
+.logo {
 	justify-self: left;
-  }
+}
 
-  .logoLink:hover {
+.logoLink:hover {
 	font-size: 50px;
-  }
+}
 
-  .menu {
+.menu {
 	text-align: center;
-  }
+}
 
-  .menuList {
+.menuList {
 	display: flex;
 	justify-content: space-between;
-  }
+}
 
-  .grid {
+.content {
+	flex: 1 1 auto;
+
+}
+
+.grid {
 	margin:auto;
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	column-gap: 20px;
 	max-width: 700px;
-  }
-  
-  .right-column {
+}
+
+.right-column {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-  }
-  
-  .game-board {
+}
+
+.game-board {
 	border-right: solid 2px black;
 	border-left: solid 2px black;
-	border-radius: 5px;
+	border-radius: -5px;
 	justify-self: center;
-  }
-  
-  .play-button {
+}
+
+.play-button {
 	max-width: 250px;
 	background-color: lightgrey;
 	font-size: 16px;
@@ -128,17 +136,38 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	border-radius: 20px;
 	color: black;
 	transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-  }
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+}
 
-  .play-button:hover {
+.play-button:hover {
 	font-size: 34px;
-  }
+}
 
-  .footer{
-	
-  }
+.footer{
+	margin-top: 15px;
+	max-height: 40px;
+}
+
+
+.footerList {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+img {
+	transition: 0.2s;
+}
+
+img:hover {
+	transform: scale(1.5);
+}
+
+
+
+
+
 

@@ -21,26 +21,44 @@
           </ul>
         </div>
       </div>
-      <div class="grid">
-          <canvas id="board" class="game-board"></canvas>
-          <div class="right-column">
-            <div>
-              <p>Score: <span id="score">0</span></p>
-              <p>Lines: <span id="lines">0</span></p>
-              <p>Level: <span id="level">0</span></p>
-              <canvas id="next" class="next"></canvas>
+      <div class="content">
+        <div class="grid">
+            <canvas id="board" class="game-board"></canvas>
+            <div class="right-column">
+              <div>
+                <p>Score: <span id="score">0</span></p>
+                <p>Lines: <span id="lines">0</span></p>
+                <p>Level: <span id="level">0</span></p>
+                <canvas id="next" class="next"></canvas>
+              </div>
+              <button onclick="play()" class="play-button">Play</button>
             </div>
-            <button onclick="play()" class="play-button">Play</button>
           </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <ul class="footerList">
+            <li class="footerImg">
+              <img src="/img/github.svg" alt="">  
+            </li>
+            <li class="footerImg">
+              <img src="/img/codewars2.svg" alt="">
+            </li>
+            <li class="footerImg">
+              <img src="/img/telegram2.svg" alt="">
+            </li>
+            <li class="footerImg">
+              <img src="/img/facebook2.svg" alt="">
+            </li>
+          </ul>
         </div>
-        <div class="footer">
-        </div>
+      </div>
     </div>
    
-    <script src="./constance.js"></script>
-    <script src="./board.js"></script>
-    <script src="./piece.js"></script>
-    <script src="./main.js"></script>
-    <script src="./swipe.js"></script>
+    <script src="./js/constance.js"></script>
+    <script src="./js/board.js"></script>
+    <script src="./js/piece.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/swipe.js"></script>
 </body>
 </html>
