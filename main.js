@@ -118,7 +118,7 @@ function gameOver() {
   // ctx.fillStyle = 'darkgrey';
   // ctx.fillRect(1, 3, 8, 1.2);
   ctx.font = '1px Arial';
-  ctx.fillStyle = 'red';
+  ctx.fillStyle = 'black';
   ctx.fillText('GAME OVER', 1.8, 4);
 }
 

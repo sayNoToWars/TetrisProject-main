@@ -1,4 +1,4 @@
-/* Обнуление
+Обнуление
 *{
 	padding: 0;
 	margin: 0;
@@ -34,26 +34,75 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} */
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 * {
 	font-family: 'Press Start 2P', cursive;
   }
   body {
-	overscroll-behavior-x: contain;
-	overflow-y: hidden;
-	background-color: darkgrey;
-	
+	background-color: lightgrey;
   }
+
+  @media (max-width: 400px) {
+	body {
+		overscroll-behavior-x: contain;
+		overflow-y: hidden;
+	}
+  }
+
+  h1 {
+	font-size: 34px;
+  }
+
+  a {
+	color: black;
+	transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+  }
+
+  a:hover {
+	font-size: 24px;
+  }
+
   .wrapper{
-	max-width: 900px;
+	max-width: 800px;
 	margin: auto;
-	
   }
-  .grid {
+
+  .header {
+	max-height: 200px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	color: black;
+	align-items: center;
+  }
+
+  .logo {
+	justify-self: left;
+  }
+
+  .logoLink:hover {
+	font-size: 50px;
+  }
+
+  .menu {
+	text-align: center;
+  }
+
+  .menuList {
+	display: flex;
+	justify-content: space-between;
+  }
+
+  .grid {
+	margin:auto;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
 	column-gap: 20px;
+	max-width: 700px;
   }
   
   .right-column {
@@ -71,12 +120,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} */
   
   .play-button {
 	max-width: 250px;
-	background-color: darkgrey;
+	background-color: lightgrey;
 	font-size: 16px;
 	padding: 15px 30px;
 	cursor: pointer;
 	border: solid 2px black;
 	border-radius: 20px;
 	color: black;
+	transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+  }
+
+  .play-button:hover {
+	font-size: 34px;
   }
 
