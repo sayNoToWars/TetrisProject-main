@@ -101,15 +101,18 @@ function turn () {
 
 let menuBtn = document.querySelector('.menuBurger');
 let menu = document.querySelector('.menu');
-let controlPanel = document.querySelector('.controlPanel');
-let controlBtn = document.querySelector('.showControlButton');
+
   menuBtn.addEventListener('click', function(){
     menuBtn.classList.toggle('openMenu');
     menu.classList.toggle('openMenu');
-    controlPanel.classList.toggle('show');
-    controlBtn.classList.toggle('show');
   })
 
+let control = document.querySelector('.controlPanel');
+let controlBtn = document.querySelector('.showControlPanel');
+controlBtn.addEventListener('click', function(){
+    control.classList.toggle('show');
+    controlBtn.classList.toggle('show');
+})
 
 
 
