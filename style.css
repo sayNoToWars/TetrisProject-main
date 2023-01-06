@@ -43,8 +43,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	background-color: lightgrey;
 }
 
-@media (max-width: 400px) {
-	body {
+@media (max-width: 500px) {
+	.greed {
 		overscroll-behavior-x: contain;
 		overflow-y: hidden;
 	}
