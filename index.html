@@ -25,6 +25,7 @@
         </div>
       </div>
       <div class="content">
+
         <div class="grid">
             <canvas id="board" class="game-board"></canvas>
             <div class="right-column">
@@ -34,36 +35,58 @@
                 <p>Level: <span id="level">0</span></p>
                 <canvas id="next" class="next"></canvas>
               </div>
+              <button onclick="pause()" class="pauseButton">
+                <img src="./img/pause.png" alt="">
+              </button>
               <button onclick="play()" class="play-button">Play</button>
             </div>
           </div>
+
+          <div class="controlPanel">
+            <button onclick="turn()" class="control turn">
+              <img src="./img/turn.png" alt="">
+            </button>
+            <button onclick="left()" class="control left">
+              <img src="./img/left.png" alt="">
+            </button>
+            <button onclick="right()" class="control right">
+              <img src="./img/right.png" alt="">
+            </button>
+            <button onclick="down()" class="control down">
+              <img src="./img/dowm.png" alt="">
+            </button>
+            <button onclick="speeddown()" class="control speedDown">
+              <img src="./img/speedDown.png" alt="">
+            </button>
+          </div>
+
       </div>
       <div class="footer">
         <div class="socialMedia">
           <ul class="socialMediaList">
             <li class="socialMediaItem">
               <a href="https://github.com/sayNoToWars" target="_blank">
-                <img src="./img/github.svg" alt="">  
+                <img class="socialMediaImg" src="./img/github.svg" alt="">  
               </a> 
             </li>
             <li class="socialMediaItem">
               <a href="https://www.codewars.com/users/sayNoToWars" target="_blank">
-                <img src="./img/codewars2.svg" alt="">  
+                <img class="socialMediaImg" src="./img/codewars2.svg" alt="">  
               </a> 
             </li>
             <li class="socialMediaItem">
               <a href="https://web.telegram.org/z/" target="_blank">
-                <img src="./img/telegram2.svg" alt="">  
+                <img class="socialMediaImg" src="./img/telegram2.svg" alt="">  
               </a> 
             </li>
             <li class="socialMediaItem">
               <a href="https://www.facebook.com/" target="_blank">
-                <img src="./img/facebook2.svg" alt="">  
+                <img class="socialMediaImg" src="./img/facebook2.svg" alt="">  
               </a> 
             </li>
             <li class="socialMediaItem">
               <a href="https://www.instagram.com/" target="_blank">
-                <img src="./img/instagram.svg" alt="">  
+                <img class="socialMediaImg" src="./img/instagram.svg" alt="">  
               </a> 
             </li>
           </ul>

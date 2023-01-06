@@ -96,12 +96,6 @@ a:hover {
 	justify-content: space-between;
 }
 
-/* @media(max-width: 500px) {
-	.menuList {
-		display: none;
-	}
-} */
-
 
 @media(max-width: 500px) {
 	.menu {
@@ -181,7 +175,7 @@ a:hover {
 
 .content {
 	flex: 1 1 auto;
-
+	min-height: 100%;
 }
 
 .grid {
@@ -205,6 +199,22 @@ a:hover {
 	justify-self: center;
 }
 
+.pauseButton{
+	max-width: 250px;
+	background-color: lightgrey;
+	font-size: 16px;
+	cursor: pointer;
+	border: none;
+	border-radius: 20px;
+	color: black;
+	transition: 0.2s;
+	align-self: flex-start;
+}
+
+.pauseButton:hover {
+	transform: scale(1.5);
+}
+
 .play-button {
 	max-width: 250px;
 	background-color: lightgrey;
@@ -221,8 +231,70 @@ a:hover {
 	transform: scale(1.2);
 }
 
+.controlPanel {
+	position: absolute;
+	left: -100%;
+	transition: 1s;
+}
+
+@media(max-width: 500px) {
+	.controlPanel {
+		margin-top: 20px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+			"turn turn"
+			"left right"
+			"down down"
+			"none speedDown";
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		justify-items: center;
+		position: relative;
+		left: 0%;
+		transition: 1s;
+	}
+	
+	.control {
+		border: none;
+		background-color: lightgrey;
+	}
+
+	.comtrol:hover {
+		transform: none;
+	}
+	
+	.turn {
+		grid-area: turn;
+	}
+	
+	.left {
+		grid-area: left;
+	}
+	
+	.right {
+		grid-area: right;
+	}
+	
+	.down {
+		grid-area: down;
+	}
+	
+	.speedDown {
+		grid-area: speedDown;
+	}
+	
+	.pause {
+		grid-area: pause;
+	}
+
+}
+
+
+
 .footer{
-	margin-top: 15px;
+	margin-top: 40px;
 	max-height: 40px;
 }
 
@@ -243,11 +315,11 @@ a:hover {
 	}
 }
 
-img {
+.socialMediaImg {
 	transition: 0.2s;
 }
 
-img:hover {
+.socialMediaImg:hover {
 	transform: scale(1.5);
 }
 

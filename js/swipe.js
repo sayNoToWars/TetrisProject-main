@@ -60,12 +60,53 @@ function handleTouchMove(evt) {
     yDown = null;                                             
 };
 
+function left () {
+    let p = moves[KEY.LEFT](board.piece)
+        if (board.valid(p)){
+            board.piece.move(p)
+        } 
+}
+
+function right () {
+    let p = moves[KEY.RIGHT](board.piece)
+        if (board.valid(p)){
+            board.piece.move(p)
+        }
+}
+
+function down () {
+    let p = moves[KEY.DOWN](board.piece)
+        if (board.valid(p)){
+            account.score += POINTS.SOFT_DROP;
+            board.piece.move(p);
+            p = moves[KEY.DOWN](board.piece);
+        }
+}
+
+function speeddown() {
+    let p = moves[KEY.SPACE](board.piece)
+        while (board.valid(p)){
+            account.score += POINTS.HARD_DROP;
+            board.piece.move(p);
+            p = moves[KEY.DOWN](board.piece);
+        }
+}
+
+function turn () {
+    let p = moves[KEY.UP](board.piece)
+        if (board.valid(p)){
+            board.piece.move(p)
+        }
+}
+
 let menuBtn = document.querySelector('.menuBurger');
   let menu = document.querySelector('.menu');
   menuBtn.addEventListener('click', function(){
     menuBtn.classList.toggle('openMenu');
     menu.classList.toggle('openMenu');
   })
+
+
 
 
 
