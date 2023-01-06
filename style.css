@@ -237,6 +237,10 @@ a:hover {
 	transition: 1s;
 }
 
+.controlPanel.show {
+	left: 0%;
+}
+
 @media(max-width: 600px) {
 	.controlPanel {
 		margin-top: 20px;
@@ -255,6 +259,7 @@ a:hover {
 		left: 0%;
 		transition: 1s;
 	}
+
 	
 	.control {
 		border: none;
@@ -289,6 +294,28 @@ a:hover {
 		grid-area: pause;
 	}
 
+}
+
+.showControlPanel {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.showControlButton {
+	max-width: 250px;
+	background-color: lightgrey;
+	font-size: 16px;
+	padding: 15px 15px;
+	cursor: pointer;
+	border: solid 2px black;
+	border-radius: 20px;
+	color: black;
+	transition: 0.2s;
+}
+
+.showControlButton:hover {
+	transform: scale(1.2);
 }
 
 
