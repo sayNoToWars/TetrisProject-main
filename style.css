@@ -43,8 +43,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	background-color: lightgrey;
 }
 
-@media (max-width: 500px) {
-	.greed {
+@media (max-width: 600px) {
+	body {
 		overscroll-behavior-x: contain;
 		overflow-y: hidden;
 	}
@@ -97,7 +97,7 @@ a:hover {
 }
 
 
-@media(max-width: 500px) {
+@media(max-width: 600px) {
 	.menu {
 		margin: auto;
 		display: block;
@@ -237,7 +237,7 @@ a:hover {
 	transition: 1s;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 600px) {
 	.controlPanel {
 		margin-top: 20px;
 		display: grid;
