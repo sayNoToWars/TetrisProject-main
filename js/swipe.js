@@ -60,6 +60,13 @@ function handleTouchMove(evt) {
     yDown = null;                                             
 };
 
+let menuBtn = document.querySelector('.menuBurger');
+  let menu = document.querySelector('.menu');
+  menuBtn.addEventListener('click', function(){
+    menuBtn.classList.toggle('openMenu');
+    menu.classList.toggle('openMenu');
+  })
+
 
 
 

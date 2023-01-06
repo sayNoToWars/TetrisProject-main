@@ -133,10 +133,12 @@ function pause() {
   
   // ctx.fillStyle = 'darkgrey';
   // ctx.fillRect(1, 3, 8, 1.2);
-  ctx.font = '1px Arial';
+  ctx.font = '1px "Press Start 2P"';
   ctx.fillStyle = 'black';
-  ctx.fillText('PAUSED', 3, 4);
+  ctx.fillText('PAUSED', 2, 10);
 }
+
+  
 
 
 
