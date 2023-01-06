@@ -43,12 +43,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	background-color: lightgrey;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
 	body {
 		overscroll-behavior-x: contain;
 		overflow-y: hidden;
 	}
-}
+} */
 
 h1 {
 	font-size: 34px;
