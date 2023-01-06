@@ -67,7 +67,7 @@ function left () {
         } 
 }
 
-function right () {
+function right() {
     let p = moves[KEY.RIGHT](board.piece)
         if (board.valid(p)){
             board.piece.move(p)
