@@ -119,15 +119,28 @@ controlBtn.addEventListener('click', function(){
 let boardAddClass = document.querySelector('body')
 let stopScaleButton = document.querySelector('.stopScaleButton')
 
+
 function stopScaling() {
-    document.addEventListener("touchmove", function(event) {
-        if (event.scale !== 1) {
-            event.preventDefault()
-        }
-    }, false)
+    document.addEventListener('touchmove', function (event) {
+        if (event.scale !== 1) { event.preventDefault(); }
+      }, false);
+
     boardAddClass.classList.toggle('boardScaleStop');
     stopScaleButton.classList.toggle('boardScaleStop');
 }
+
+let showTutorialBtn = document.querySelector('.showTutorialPanel');
+let showControlKyes = document.querySelector('.tutorial');
+
+showTutorialBtn.addEventListener('click', function(){
+    showControlKyes.classList.toggle('showTutorial');
+    showTutorialBtn.classList.toggle('showTutorial');
+})
+
+showControlKyes.addEventListener('click', function(){
+    showControlKyes.classList.toggle('showTutorial');
+})
+
 
 
 

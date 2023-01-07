@@ -59,9 +59,6 @@ a {
 	transition: 0.2s;
 }
 
-a:hover {
-	font-size: 24px;
-}
 
 .wrapper{
 	max-width: 800px;
@@ -90,6 +87,15 @@ a:hover {
 .menuList {
 	display: flex;
 	justify-content: space-between;
+}
+
+.memuListLink {
+	display: flex;
+	transition: all 0.2s ease;
+}
+
+.memuListLink:hover {
+	font-size: 22px;
 }
 
 
@@ -172,6 +178,114 @@ a:hover {
 .content {
 	flex: 1 1 auto;
 	min-height: 100%;
+}
+
+.tutorial {
+	position: absolute;
+	background-color: darkgray;
+	border: solid 2px black;
+	border-radius: 40px;
+	right: -100%;
+	transition: 1s;
+}
+
+.tutorial.showTutorial {
+	position: relative;
+	right: 0%;
+}
+
+.otherKeysList {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.containerForKeysAndArrows {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.keysList {
+	display: grid;
+	grid-template-areas: 
+		"up up up"
+		"left down right";
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.upkey {
+	grid-area: up;
+}
+
+.leftkey {
+	grid-area: left;
+}
+
+.downkey {
+	grid-area: down;
+}
+
+.rightkey {
+	grid-area: right;
+}
+
+.arrowsList {
+	display: grid;
+	grid-template-areas: 
+		"up up up"
+		"left down right";
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.swipeList {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.upArrow {
+	grid-area: up;
+}
+
+.leftArrow {
+	grid-area: left;
+}
+
+.downArrow {
+	grid-area: down;
+}
+
+.rightArrow {
+	grid-area: right;
+}
+
+@media(max-width: 400px) {
+	.containerForKeysAndArrows {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media(max-width: 200px) {
+	.swipeList {
+		grid-template-columns: 1fr;
+	}
+}
+
+.tutorialImg {
+	transition: 0.5s;
+}
+
+.tutorialImg:hover {
+	transform: scale(1.2);
 }
 
 .grid {
@@ -360,7 +474,6 @@ a:hover {
 		margin: auto;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 	}
 }
 
