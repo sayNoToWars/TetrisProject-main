@@ -185,13 +185,14 @@ a {
 	background-color: darkgray;
 	border: solid 2px black;
 	border-radius: 40px;
-	right: -100%;
+	left: -100%;
 	transition: 1s;
 }
 
 .tutorial.showTutorial {
-	position: relative;
-	right: 0%;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
 }
 
 .otherKeysList {
