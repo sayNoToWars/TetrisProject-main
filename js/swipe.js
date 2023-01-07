@@ -109,10 +109,28 @@ let menu = document.querySelector('.menu');
 
 let control = document.querySelector('.controlPanel');
 let controlBtn = document.querySelector('.showControlPanel');
+
 controlBtn.addEventListener('click', function(){
     control.classList.toggle('show');
     controlBtn.classList.toggle('show');
 })
+
+
+let boardAddClass = document.querySelector('body')
+let stopScaleButton = document.querySelector('.stopScaleButton')
+
+function stopScaling() {
+    document.addEventListener("touchmove", function(event) {
+        if (event.scale !== 1) {
+            event.preventDefault()
+        }
+    }, false)
+    boardAddClass.classList.toggle('boardScaleStop');
+    stopScaleButton.classList.toggle('boardScaleStop');
+}
+
+
+
 
 
 

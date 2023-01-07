@@ -117,9 +117,9 @@ function gameOver() {
   cancelAnimationFrame(requestId);
   // ctx.fillStyle = 'darkgrey';
   // ctx.fillRect(1, 3, 8, 1.2);
-  ctx.font = '1px Arial';
-  ctx.fillStyle = 'black';
-  ctx.fillText('GAME OVER', 1.8, 4);
+  ctx.font = '1px "Press Start 2P"';
+  ctx.fillStyle = 'darkred';
+  ctx.fillText('GAME OVER', 0.5, 9);
 }
 
 function pause() {
