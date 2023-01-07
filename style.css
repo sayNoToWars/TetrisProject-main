@@ -447,7 +447,7 @@ a {
 	border: solid 2px black;
 	border-radius: 20px;
 	color: black;
-	transition: 0.2s;
+	transition: all 1s ease;
 }
 
 .showControlButton:hover {
