@@ -118,7 +118,7 @@ controlBtn.addEventListener('click', function(){
 
 let boardAddClass = document.querySelector('body')
 let stopScaleButton = document.querySelector('.stopScaleButton')
-
+let wrapper = document.querySelector('.wrapper')
 
 function stopScaling() {
     document.addEventListener('touchmove', function (event) {
@@ -127,6 +127,7 @@ function stopScaling() {
 
     boardAddClass.classList.toggle('boardScaleStop');
     stopScaleButton.classList.toggle('boardScaleStop');
+    wrapper.classList.toggle('boardScaleStop')
 }
 
 let showTutorialBtn = document.querySelector('.showTutorialPanel');
@@ -140,6 +141,8 @@ showTutorialBtn.addEventListener('click', function(){
 showControlKyes.addEventListener('click', function(){
     showControlKyes.classList.toggle('showTutorial');
 })
+
+
 
 
 
