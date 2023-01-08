@@ -188,6 +188,7 @@ a {
 
 .tutorial {
 	position: absolute;
+	
 	background-color: darkgray;
 	border: solid 2px black;
 	border-radius: 40px;
@@ -201,6 +202,29 @@ a {
 	left:50%;
 	transform:translate(-50%, -50%);
 }
+
+@media (max-height: 550px) {
+	.tutorial.showTutorial {
+		transform:translate(-50%, -20%);
+	}
+}
+
+@media (max-width: 350px) {
+	.tutorial.showTutorial {
+		transform:translate(-50%, -20%);
+	}
+}
+
+/* @media (max-width: 350px) {
+	.tutorial.showTutorial {
+		position: relative;
+		top:0%;
+		left:0%;
+		transform:translate(0,0);
+	}
+} */
+
+	
 
 .stopScaleKey {
 	margin-top: 20px;
@@ -299,6 +323,7 @@ a {
 	.swipeList {
 		grid-template-columns: 1fr;
 	}
+
 }
 
 .tutorialImg {
