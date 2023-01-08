@@ -106,6 +106,8 @@ a {
 
 @media(max-width: 600px) {
 	.menu {
+		width: 70vw;
+		
 		margin: auto;
 		display: block;
 		position: absolute;
@@ -188,11 +190,10 @@ a {
 
 .tutorial {
 	position: absolute;
-	
 	background-color: darkgray;
 	border: solid 2px black;
 	border-radius: 40px;
-	top: -300%;
+	top: -1000%;
 	transition: 1s;
 	z-index: 3;
 }
@@ -214,17 +215,6 @@ a {
 		transform:translate(-50%, -20%);
 	}
 }
-
-/* @media (max-width: 350px) {
-	.tutorial.showTutorial {
-		position: relative;
-		top:0%;
-		left:0%;
-		transform:translate(0,0);
-	}
-} */
-
-	
 
 .stopScaleKey {
 	margin-top: 20px;
