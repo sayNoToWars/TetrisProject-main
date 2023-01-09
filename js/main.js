@@ -65,11 +65,12 @@ function addEventListener() {
         while (board.valid(p)) {
           account.score += POINTS.HARD_DROP;
           board.piece.move(p);
-          p = moves[KEY.DOWN](board.piece);
+          p = moves[KEY.SPACE](board.piece);
         }       
       } else if (board.valid(p)) {
         board.piece.move(p);
-        if (event.keyCode === KEY.DOWN) {
+        if (event.keyCode === KEY.DOWN || 
+            event.keyCode === KEY.DOWN1) {
           account.score += POINTS.SOFT_DROP;         
         }
       }

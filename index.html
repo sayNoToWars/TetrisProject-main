@@ -118,19 +118,22 @@
           </div>
 
           <div class="controlPanel">
-            <button onclick="turn()" class="control turn">
+            <button  onmousedown="turn()" class="control turn">
               <img src="./img/turn.png" alt="">
             </button>
-            <button onclick="left()" class="control left">
+            <button oncontextmenu = "return false" ondragstart="return false" onmousedown="repeatMove(left, 100)" 
+              onmouseup="stopRepeat()" class="control left">
               <img src="./img/left.png" alt="">
             </button>
-            <button onclick="right()" class="control right">
+            <button oncontextmenu = "return false" ondragstart="return false" onmousedown="repeatMove(right, 100)"
+              onmouseup="stopRepeat()" class="control right">
               <img src="./img/right.png" alt="">
             </button>
-            <button onclick="down()" class="control down">
+            <button oncontextmenu = "return false" ondragstart="return false" onmousedown="repeatMove(down, 100)"
+              onmouseup="stopRepeat()" class="control down">
               <img src="./img/dowm.png" alt="">
             </button>
-            <button onclick="speeddown()" class="control speedDown">
+            <button onmousedown="speeddown()" class="control speedDown">
               <img src="./img/speedDown.png" alt="">
             </button>
           </div>
