@@ -141,17 +141,19 @@ showControlKyes.addEventListener('click', function(){
 
 
 
-document.getElementById('leftControl').addEventListener('touchstart', event => {
+document.getElementById('leftControl').addEventListener('pointerdown', event => {
     return event = repeatMove(left, 100);
 }, false)
 
-document.getElementById('rightControl').addEventListener('touchstart', event => {
+document.getElementById('rightControl').addEventListener('pointerdown', event => {
     return event = repeatMove(right, 100);
 }, false)
 
-document.getElementById('dowmControl').addEventListener('touchstart', event => {
+document.getElementById('dowmControl').addEventListener('pointerdown', event => {
     return event = repeatMove(down, 100);
 }, false)
+
+document.addEventListener('pointerup', stopRepeat, false)
     
 
 
