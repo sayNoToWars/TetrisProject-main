@@ -153,6 +153,7 @@ document.getElementById('dowmControl').addEventListener('pointerdown', event => 
     return event = repeatMove(down, 100);
 }, false)
 
+document.addEventListener('pointermove', stopRepeat, false)
 document.addEventListener('pointerup', stopRepeat, false)
     
 
