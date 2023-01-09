@@ -141,6 +141,20 @@ showControlKyes.addEventListener('click', function(){
 
 
 
+document.getElementById('leftControl').addEventListener('touchstart', event => {
+    return event = repeatMove(left, 100);
+}, false)
+
+document.getElementById('rightControl').addEventListener('touchstart', event => {
+    return event = repeatMove(right, 100);
+}, false)
+
+document.getElementById('dowmControl').addEventListener('touchstart', event => {
+    return event = repeatMove(down, 100);
+}, false)
+    
+
+
 
 
 
