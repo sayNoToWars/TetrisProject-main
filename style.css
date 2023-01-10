@@ -415,7 +415,7 @@ a {
 	left: 0%;
 	transition: 1s;
 	position: absolute;
-	left: -100%;
+	left: -300%;
 	transition: all 2s ease;
 	z-index: 1;
 }
