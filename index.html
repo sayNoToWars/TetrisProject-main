@@ -107,18 +107,18 @@
                 <p>Level: <span id="level">0</span></p>
                 <canvas id="next" class="next"></canvas>
               </div>
-              <button onclick="stopScaling()" class="stopScaleButton">
+              <button onpointerdown="stopScaling()" class="stopScaleButton">
                 <img src="./img/stopmovie.png" alt="">
               </button>
-              <button onclick="pause()" class="pauseButton">
+              <button onpointerdown="pause()" class="pauseButton">
                 <img src="./img/pause.png" alt="">
               </button>
-              <button onclick="play()" class="play-button">Play</button>
+              <button onpointerdown="play()" class="play-button">Play</button>
             </div>
           </div>
 
           <div class="controlPanel" oncontextmenu = "return false" ondragstart="return false">
-            <button  onmousedown="turn()" class="control turn">
+            <button  onpointerdown="turn()" class="control turn">
               <img src="./img/turn.png" alt="">
             </button>
             <button 
@@ -131,7 +131,7 @@
             <button  class="control down" id="dowmControl">
               <img src="./img/dowm.png" alt="">
             </button>
-            <button onmousedown="speeddown()" class="control speedDown">
+            <button onpointerdown="speeddown()" class="control speedDown">
               <img src="./img/speedDown.png" alt="">
             </button>
           </div>

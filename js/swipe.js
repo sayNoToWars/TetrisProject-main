@@ -100,15 +100,19 @@ function turn () {
 let menuBtn = document.querySelector('.menuBurger');
 let menu = document.querySelector('.menu');
 
-menuBtn.addEventListener('click', function(){
+menuBtn.addEventListener('pointerdown', function(){
     menuBtn.classList.toggle('openMenu');
     menu.classList.toggle('openMenu');
   })
 
+menu.addEventListener('dblclick', function(){
+    menu.classList.toggle('openMenu');
+})
+
 let control = document.querySelector('.controlPanel');
 let controlBtn = document.querySelector('.showControlPanel');
 
-controlBtn.addEventListener('click', function(){
+controlBtn.addEventListener('pointerdown', function(){
     control.classList.toggle('show');
     controlBtn.classList.toggle('show');
 })
@@ -131,7 +135,7 @@ function stopScaling() {
 let showTutorialBtn = document.querySelector('.showTutorialPanel');
 let showControlKyes = document.querySelector('.tutorial');
 
-showTutorialBtn.addEventListener('click', function(){
+showTutorialBtn.addEventListener('pointerdown', function(){
     showControlKyes.classList.toggle('showTutorial');
     showTutorialBtn.classList.toggle('showTutorial');
 })
