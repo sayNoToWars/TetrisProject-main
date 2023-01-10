@@ -106,8 +106,8 @@ menuBtn.addEventListener('pointerdown', function(){
   })
 
 menu.addEventListener('dblclick', function(){
-    menu.classList.toggle('openMenu');
     menuBtn.classList.toggle('openMenu');
+    menu.classList.toggle('openMenu');
 })
 
 let control = document.querySelector('.controlPanel');
