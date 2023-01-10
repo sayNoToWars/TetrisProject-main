@@ -13,6 +13,7 @@ function handleTouchStart(evt) {
     yDown = evt.touches[0].clientY;                                      
 };
 
+
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
         return;
