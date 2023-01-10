@@ -71,6 +71,7 @@ a {
 .wrapper.boardScaleStop {
 	overscroll-behavior: none;
 	overflow: hidden;
+	touch-action: none;
 }
 
 .header {

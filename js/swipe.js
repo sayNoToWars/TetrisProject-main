@@ -1,9 +1,9 @@
 // Вешаем на прикосновение функцию handleTouchStart
-document.addEventListener('touchstart', handleTouchStart, false);  
+document.getElementById('grid').addEventListener('touchstart', handleTouchStart, false);  
 // // А на движение пальцем по экрану - handleTouchMove      
-document.addEventListener('touchmove', handleTouchMove, false);
+document.getElementById('grid').addEventListener('touchmove', handleTouchMove, false);
 
-document.addEventListener('touchend', stopRepeat, false)
+document.getElementById('grid').addEventListener('touchend', stopRepeat, false)
 
 var xDown = null;                                                        
 var yDown = null;                                                        
