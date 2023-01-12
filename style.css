@@ -494,13 +494,12 @@ a {
 
 
 .footer{
+	height: 70px;
 	margin-top: 40px;
-	max-height: 40px;
 }
 
 
 .socialMediaList {
-	margin: auto;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
