@@ -24,7 +24,7 @@ class Piece {
       this.shape.forEach((row, y) => {
         row.forEach((value, x) => {
           if (value > 0) {
-            this.ctx.fillRect(this.x + x, this.y + y, 1, 1);
+            this.ctx.fillRect(this.x + x, this.y + y, 0.97, 0.97);
           }
         });
       });

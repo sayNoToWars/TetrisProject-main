@@ -38,11 +38,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 * {
 	font-family: 'Press Start 2P', cursive;
-  }
-  body {
-	background-color: lightgrey;
 }
 
+body {
+	background-color: lightgrey;
+}
 
 body.boardScaleStop {
 	overscroll-behavior: none;
@@ -415,7 +415,6 @@ a {
 	align-content: center;
 	align-items: center;
 	justify-items: center;
-	position: relative;
 	transition: all 2s ease;
 	z-index: 1;
 }

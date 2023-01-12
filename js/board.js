@@ -129,7 +129,7 @@ class Board {
       row.forEach((value, x) => {
         if (value > 0) {
           this.ctx.fillStyle = COLORS[value];
-          this.ctx.fillRect(x, y, 1, 1);
+          this.ctx.fillRect(x, y, 0.97, 0.97);
         }
       });
     });
